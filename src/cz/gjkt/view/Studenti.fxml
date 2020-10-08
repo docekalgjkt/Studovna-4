@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cz.gjkt.view.StudentiController">
+   <children>
+      <Label layoutX="26.0" layoutY="6.0" prefHeight="42.0" prefWidth="125.0" text="Studenti">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" layoutX="312.0" layoutY="-2.0" prefHeight="68.0" prefWidth="205.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#handlePridejButton" text="Přidej" />
+            <Button mnemonicParsing="false" onAction="#handleSmazButton" text="Smaž" />
+            <Button mnemonicParsing="false" onAction="#handleUpravButton" text="Uprav" />
+         </children>
+      </HBox>
+      <TableView fx:id="tableView" layoutY="48.0" prefHeight="350.0" prefWidth="600.0" />
+   </children>
+</AnchorPane>
